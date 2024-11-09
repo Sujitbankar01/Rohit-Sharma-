@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <title>Rohit-sharma</title>
+
+    <style>
+        .container{
+            margin: 20px auto;
+            border: 3px double #cc2900;
+            width: 30%;
+            border-radius: 7px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+        .Hitman-images{
+            width: 280px;
+            height: 280px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 6px;
+
+        }
+        .img-box{
+            display: flex;
+            justify-content: center;
+        }
+
+        .Hitman{
+            height: 15%;
+            width: 15%;
+            object-fit: cover;
+            border: 2px solid #ff704d;
+            border-radius: 5px;
+            margin: 15px;
+            margin-top: 8px;
+            cursor: pointer;
+        }
+
+        .info{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+
+        .btn{
+            width: 70%;
+            display: block;
+            margin: 5px auto;
+            padding: 5px;
+            border-radius: 15px;
+            background-color:#ffc2b3;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./images/rohit 4.jfif" alt="Rohit-sharma" class="Hitman-images" id="img">
+
+        <div class="img-box">
+            <img src="./images/rohit 1.jfif" alt="Rohit-sharma" class="Hitman" onclick=" rohitsharma('2')">
+            <img src="./images/rohit 2.jfif" alt="Rohit-sharma" class="Hitman" onclick=" rohitsharma('3')">
+            <img src="./images/rohit 3.jfif" alt="Rohit-sharma" class="Hitman" onclick=" rohitsharma('4')">
+        </div>
+
+        <p class="info"> <b>Captain of Indian cricket</b></p>
+        <button class="btn">More info</button>
+    </div>
+
+    <script>
+        const imgElement = document.getElementById("img");
+
+        function rohitsharma(num){
+            if(num==2){
+                imgElement.src = "./images/rohit 1.jfif"
+            }else if(num==3){
+                imgElement.src = "./images/rohit 2.jfif"
+            }else{
+                imgElement.src = "./images/rohit 3.jfif"
+            }
+        }
+    </script>
+</body>
+</html>
